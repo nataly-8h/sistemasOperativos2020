@@ -11,7 +11,16 @@ main(int argc, char **argv)
     printf(2, "usage: kill pid...\n");
     exit();
   }
-  for(i=1; i<argc; i++)
+  
+  for(i=1; i<argc; i++){
     kill(atoi(argv[i]));
+    if(atoi(argv[i])==1){
+        printf(2, "[^._.^]ﾉ彡 me quieres matar o ke...\n");
+    } else{
+        kill(atoi(argv[i]));
+    }
   exit();
+  }
 }
+
+
