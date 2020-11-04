@@ -2,7 +2,7 @@
 #include <pthread.h>
 #include <stdio.h>
 #include <unistd.h>
-
+//
 unsigned saldo;
 sem_t semSaldo;
 
