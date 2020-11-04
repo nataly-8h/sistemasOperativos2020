@@ -26,7 +26,7 @@ int main(){
     pthread_t threads[NUM_THREADS];
 
     for(int i=0;i<NUM_THREADS;i++){
-        pthread_create(&threads[i],NULL,addToSaldo,NULL);
+        pthread_create(&threads[i],NULL,addToSaldo,NULL); //mutex binario lock
     }
 
     for(int i =0;i<NUM_THREADS;i++){
